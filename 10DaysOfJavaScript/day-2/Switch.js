@@ -1,24 +1,8 @@
 function main(){
     let letter = 'j';
-    console.log(getLetter2(letter));
+    console.log(getLetter_2(letter));
 }
-
-function getLetter2(s){
-    const groups =
-    [   
-        'aeiou',//A
-        'bcdef',//B
-        'hjklm',//C
-        'npqrstvwxyz' //D
-    ];
-
-    for(let i=0; i<groups.length; i++){
-        if(groups[i].includes(s[0])){  // Verifica se o primeiro caractere da string s está no grupo atual
-            return 'ABCD'[i]; // Retorna a letra correspondente ('A', 'B', 'C', 'D') com base no índice i
-        }
-    }
-}
-
+//O enunciado pede para fazer dessa forma, mas é bem chato escrever isso
 function getLetter(s) {
     let letter;
     switch (s[0]) {
@@ -58,6 +42,23 @@ function getLetter(s) {
             break;
     }
     return letter;
+}
+
+//forma simples e direta 
+function getLetter_2(s){
+    const groups = //array com 4 indices
+    [   
+        'aeiou',//A
+        'bcdef',//B
+        'hjklm',//C
+        'npqrstvwxyz' //D
+    ];
+
+    for(let i=0; i<groups.length; i++){
+        if(groups[i].includes(s[0])){  // Verifica se o primeiro caractere da string s está no grupo atual(includes)
+            return 'ABCD'[i]; // Retorna a letra correspondente ('A', 'B', 'C', 'D') com base no índice i, i[0] = A...
+        }
+    }
 }
 
 main();
