@@ -3,14 +3,6 @@ function main(){
     console.log(getSecondLargest_2(arr)); // Saída: 4
 }
 
-function getSecondLargest_2(nums) {
-    //Array.from converte o Set de volta para um array.
-    nums = Array.from(new Set(nums)); //construtor Set cria novo conjunto, Set não permite elementos duplicados.
-    //sort do array ordena os elementos. A função de comparação (a, b) => b - a ordena os elementos em ordem decrescente. 
-    nums.sort((a, b) => b - a); // (b - a) significa que sera decrescente
-    return nums[1]; //retorna o o segundo elemento
-}
-
 function getSecondLargest(nums) {
     if (nums.length < 2) {
         return undefined;
@@ -31,6 +23,14 @@ function getSecondLargest(nums) {
     }
     
     return segundoMaior;
+}
+
+function getSecondLargest_2(nums) {
+    //Array.from converte o Set de volta para um array.
+    nums = Array.from(new Set(nums)); //construtor Set cria novo conjunto, Set não permite elementos duplicados.
+    //sort do array ordena os elementos. A função de comparação (a, b) => b - a ordena os elementos em ordem decrescente. 
+    nums.sort((a, b) => b - a); // (b - a) significa que sera decrescente
+    return nums[1]; //retorna o o segundo elemento
 }
 
 main();
