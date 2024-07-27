@@ -10,7 +10,7 @@ function staircase(n) {
 
     for (let i = 1; i <= n; i++) {
         // Cria uma linha da escada com espaços e hashes
-        let line = ' '.repeat(n - i) + '#'.repeat(i);
+        let line = ' '.repeat(n - i) + '#'.repeat(i); //(n - i) à esquerda
         console.log(line);
     }
 }
