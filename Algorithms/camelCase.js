@@ -1,7 +1,3 @@
-function main(){
-    camelcase('saveChangesInTheEditor');
-}
-
 function camelcase(s){
     let cont=0;
     if(s[0] >= 'a' &&  s[0] <= 'z'){

@@ -1,0 +1,5 @@
+--COUNTRYCODE para o Japão é JPN.
+
+SELECT Name 
+FROM City
+WHERE COUNTRYCODE = 'JPN';
