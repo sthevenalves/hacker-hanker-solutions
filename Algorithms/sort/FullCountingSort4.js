@@ -1,28 +1,28 @@
-function countSort(arr) {
-    const n = arr.length;  
-    const meio = Math.floor(n / 2);
-
-    const grupos = Array(100).fill().map(() => []);
-
-    for (let i = 0; i < n; i++) {
-        const item = arr[i];  
-        const indice = parseInt(item[0], 10);  
-        let valor; 
-
-        if (i < meio) {
-            valor = '-';
-        } else {
-            valor = item[1]; 
+function countSort(arr){
+    let middle = Math.floor(arr.length/2);
+    let max = 0;
+    arr.forEach((key) => {
+        if(key[0] > max){
+            max = key[0];
         }
+    });
+    let group = Array.from({length: max + 1}, () => []);
 
-        grupos[indice].push(valor);
+    for(let i=0; i<arr.length; i++){
+        let item = arr[i];
+        let index = parseInt(item[0], 10);
+        let value;
+
+        if(i < middle){
+            value = '-';
+        }else{
+            value = item[1];
+        }
+        group[index].push(value);
     }
-
-    const resultado = grupos.flat();
-
-    console.log(resultado.join(' '));
+    let result = group.flat();
+    console.log(result.join(' '));
 }
-
 
 const input = [
     ['0', 'ab'],

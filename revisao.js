@@ -1,14 +1,18 @@
-function kangaroo(x1, v1, x2, v2) {
-    let jump1 = x1;
-    let jump2 = x2;
-    let yesNo = 'NO';
-    for (let i = 0; i < 10000; i++) {
-        jump1 += v1;
-        jump2 += v2;
-        if (jump1 === jump2)
-            yesNo = 'YES';
+function staircase(n) {
+    let line = '';
+    let position = n - 1;
+    for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+            if (position > j) {
+                line += ' ';
+            } else {
+                line += '#';
+            }
+        }
+        console.log(line);
+        line = '';
+        position -= 1;
     }
-    return yesNo;
 }
 
-console.log(kangaroo(0, 2, 5, 3));
+staircase(4)
