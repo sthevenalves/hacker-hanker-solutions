@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <td><a href="https://www.hackerrank.com/domains/java">Java</a></td>
-            <td><a href="https://example.com/solution2">Solution</a></td>
+            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Java/src/soluctions">Solution</a></td>
         </tr>
         <tr>
             <td><a href="https://www.hackerrank.com/domains/sql">SQL</a></td>
