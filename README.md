@@ -6,12 +6,24 @@
             <th>Link Solution</th>
         </tr>
         <tr>
-            <td><a href="https://www.hackerrank.com/domains/algorithms">Algorithms</a></td>
-            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Algorithms">Solution</a></td>
+            <td><a href="https://www.hackerrank.com/domains/algorithms">Algorithms:</a></td>
+            <td>-</td>
         </tr>
         <tr>
-            <td><a href="https://www.hackerrank.com/domains/java">Java</a></td>
-            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Java/src/soluctions">Solution</a></td>
+            <td>Implementation</a></td>
+            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Algorithms/Implementation">Solution</a></td>
+        </tr>
+        <tr>
+            <td>Sorting</a></td>
+            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Algorithms/Sorting">Solution</a></td>
+        </tr>
+        <tr>
+            <td>Strings</a></td>
+            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Algorithms/Strings">Solution</a></td>
+        </tr>
+         <tr>
+            <td>Warmup</a></td>
+            <td><a href="https://github.com/sthevenalves/hacker-rank-solutions/tree/main/Algorithms/Warmups">Solution</a></td>
         </tr>
         <tr>
             <td><a href="https://www.hackerrank.com/domains/sql">SQL</a></td>
