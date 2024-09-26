@@ -1,14 +1,11 @@
-function camelcase(s){
-    let cont=0;
-    if(s[0] >= 'a' &&  s[0] <= 'z'){
-        cont ++;
-    }
-    s.split('').forEach(chars => {
-        if(chars >= 'A' && chars <= 'Z'){
-            cont++;
+function camelcase(s) {
+    let count = 1;
+    for(let i=0; i<s.length; i++){
+        if(s[i] === s[i].toUpperCase() && s[i] !== s[i].toLowerCase()){
+            count += 1;
         }
-    });
-    return cont;
+    }
+    return count;
 }
 
-main();
+console.log(camelcase('saveChangesInTheEditor'))
