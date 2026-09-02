@@ -3,7 +3,6 @@
     
 ![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-<p>Lógica de Algoritmos e resoluções problemas do HackerRank</p>
     <table border="1">
         <tr>
             <th>Name problem</th>
